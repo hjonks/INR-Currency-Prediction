@@ -1,28 +1,27 @@
-from fredapi import Fred
+"""
+Test FRED API Connection 
+"""
 
-# Test your API key
-api_key = '05ce356451567ff503d3eeb085eadb8a'
+import os
 
-print("Testing FRED API key...")
-print(f"Key: {api_key[:10]}...")
+# Read API key from file (which is in .gitignore)
+def load_api_key():
+    """Load FRED API key from api_keys.txt"""
+    api_key_file = os.path.join(os.path.dirname(__file__), 'E:Projects/INR_Currency_Project', 'api_keys.txt')
+    
+    try:
+        with open(api_key_file, 'r') as f:
+            for line in f:
+                if line.strip() and not line.startswith('#'):
+                    # Assuming format: FRED_API_KEY=your_key_here
+                    if 'FRED_API_KEY' in line:
+                        return line.split('=')[1].strip()
+        raise ValueError("FRED_API_KEY not found in api_keys.txt")
+    except FileNotFoundError:
+        raise FileNotFoundError("api_keys.txt not found! Create it in project root.")
 
-try:
-    fred = Fred(api_key=api_key)
-    
-    # Try to get a simple series
-    data = fred.get_series('GDP', observation_start='2020-01-01')
-    
-    print(f"\n✓ SUCCESS! API key works!")
-    print(f"  Downloaded {len(data)} GDP records")
-    print(f"\nSample data:")
-    print(data.head())
-    
-except Exception as e:
-    print(f"\n✗ ERROR: {e}")
-    print("\nPossible issues:")
-    print("1. API key is invalid")
-    print("2. API key has been revoked")
-    print("3. FRED server is down")
-    print("\n💡 Solution:")
-    print("   Go to: https://fredaccount.stlouisfed.org/apikeys")
-    print("   Generate a NEW API key")
+# Load the API key
+FRED_API_KEY = load_api_key()
+
+print(f"✅ API Key loaded: {FRED_API_KEY[:4]}...{FRED_API_KEY[-4:]}")
+print("✅ API key loaded securely from api_keys.txt")

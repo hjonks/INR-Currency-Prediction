@@ -1,10 +1,10 @@
-# 🏆 INR Currency Prediction - Machine Learning Project
+#  INR Currency Prediction - Machine Learning Project
 
 Predicting Indian Rupee (INR) weekly movements using machine learning with **60.34% accuracy**.
 
 ![Results](results/figures/final_project_summary.png)
 
-## 🎯 Project Overview
+##  Project Overview
 
 **Course:** LUBS5990M - Machine Learning  
 **Institution:** Leeds University Business School  
@@ -17,7 +17,7 @@ Predicting Indian Rupee (INR) weekly movements using machine learning with **60.
 
 ---
 
-## 📊 Key Results
+##  Key Results
 
 | Metric | Value |
 |--------|-------|
@@ -29,7 +29,7 @@ Predicting Indian Rupee (INR) weekly movements using machine learning with **60.
 
 ---
 
-## 💡 Key Insight
+##  Key Insight
 
 **Weekly prediction beats daily prediction by 8%**
 
@@ -37,7 +37,7 @@ Why? Weekly predictions filter out daily market noise and capture meaningful tre
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 ```
 INR_Currency_Project/
 ├── data/
@@ -64,7 +64,7 @@ INR_Currency_Project/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Load Model
 ```python
@@ -101,7 +101,7 @@ prediction = model.predict(scaler.transform(features))[0]
 4. **Daily Decision Tree:** 49.03%
 5. **Daily Random Forest:** 49.03%
 6. **Daily XGBoost (35 features):** 47.95% (overfitted)
-7. **⭐ Weekly Random Forest (5 features):** 60.34% ✅
+7. **-> Weekly Random Forest (5 features):** 60.34% ✅
 
 ### The Breakthrough
 
@@ -111,7 +111,7 @@ prediction = model.predict(scaler.transform(features))[0]
 
 ---
 
-## 🔑 Final Model Details
+##  Final Model Details
 
 **Features Used (5):**
 1. MA5 - 5-day moving average
@@ -134,7 +134,7 @@ prediction = model.predict(scaler.transform(features))[0]
 
 ---
 
-## 💼 Business Application
+##  Business Application
 
 This model can be used for:
 - Weekly FX trading signals
@@ -144,7 +144,7 @@ This model can be used for:
 
 ---
 
-## 📚 Key Learnings
+##  Key Learnings
 
 1. **More features ≠ better accuracy** - 5 features beat 35 features
 2. **Time horizon matters** - Weekly prediction beats daily by 8%
@@ -154,7 +154,7 @@ This model can be used for:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Python 3.13
 - pandas, numpy - Data processing
@@ -165,11 +165,12 @@ This model can be used for:
 
 ---
 
-## 📧 Contact
+##  Contact
 
 **Dhruv Chaudhary**  
 Leeds University Business School  
 LUBS5990M Machine Learning Course  
+dhruvdc007@gmail.com
 February 2026
 
 ---
