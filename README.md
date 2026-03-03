@@ -1,6 +1,6 @@
 #  INR Currency Prediction - Machine Learning Project
 
-Predicting Indian Rupee (INR) weekly movements using machine learning with **60.34% accuracy**.
+Predicting Indian Rupee (INR) weekly movements using machine learning with **59.5% accuracy**.
 
 ![Results](results/figures/final_project_summary.png)
 
