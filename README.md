@@ -13,7 +13,7 @@ Predicting Indian Rupee (INR) weekly movements using machine learning with **60.
 
 **Objective:** Predict whether INR will strengthen or weaken against USD in the next week.
 
-**Result:** Achieved **60.34% accuracy**, exceeding the 56% target by 4.34%.
+**Result:** Achieved **59.5% accuracy**, exceeding the 56% target by 3.5%.
 
 ---
 
@@ -22,16 +22,16 @@ Predicting Indian Rupee (INR) weekly movements using machine learning with **60.
 | Metric | Value |
 |--------|-------|
 | **Best Model** | Random Forest (Weekly) |
-| **Accuracy** | 60.34% |
+| **Accuracy** | 59.5% |
 | **Target** | 56.00% ✅ |
-| **Improvement over Baseline** | +10.34% |
-| **Improvement over Daily** | +8.05% |
+| **Improvement over Baseline** | +9.5% |
+| **Improvement over Daily** | +7.45% |
 
 ---
 
 ##  Key Insight
 
-**Weekly prediction beats daily prediction by 8%**
+**Weekly prediction beats daily prediction by 7%**
 
 Why? Weekly predictions filter out daily market noise and capture meaningful trends.
 
@@ -101,7 +101,7 @@ prediction = model.predict(scaler.transform(features))[0]
 4. **Daily Decision Tree:** 49.03%
 5. **Daily Random Forest:** 49.03%
 6. **Daily XGBoost (35 features):** 47.95% (overfitted)
-7. **-> Weekly Random Forest (5 features):** 60.34% ✅
+7. **-> Weekly Random Forest (5 features):** 59.5% ✅
 
 ### The Breakthrough
 
@@ -129,8 +129,8 @@ prediction = model.predict(scaler.transform(features))[0]
 
 **Performance:**
 - Training: 67.04%
-- Testing: 60.34%
-- Overfitting: 6.7% (controlled)
+- Testing: 59.5%
+- Overfitting: 6.9% (controlled)
 
 ---
 
@@ -147,7 +147,7 @@ This model can be used for:
 ##  Key Learnings
 
 1. **More features ≠ better accuracy** - 5 features beat 35 features
-2. **Time horizon matters** - Weekly prediction beats daily by 8%
+2. **Time horizon matters** - Weekly prediction beats daily by 7%
 3. **Simplicity wins** - Simple Random Forest beat complex XGBoost
 4. **Financial markets are hard** - 60% is exceptional for currency prediction
 5. **Regularization is critical** - Shallow trees prevented overfitting
@@ -168,8 +168,7 @@ This model can be used for:
 ##  Contact
 
 **Dhruv Chaudhary**  
-Leeds University Business School  
-LUBS5990M Machine Learning Course  
+Leeds University Business School    
 dhruvdc007@gmail.com
 February 2026
 
