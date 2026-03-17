@@ -1,0 +1,20 @@
+Metric,Value
+Dataset Period,2010-01-01 to 2026-03-16
+Total Trading Days,"4,218"
+Data Completeness,99.97%
+INR Start Price (2010),46.61 INR/USD
+INR End Price (2026),92.56 INR/USD
+Total INR Change,+98.59%
+Average Daily Return,0.0175%
+Daily Volatility (Std),0.4741%
+Maximum Single-Day Move,6.2870%
+,
+Models Tested,6 models
+Best Daily Model,k-NN
+Best Daily Accuracy,52.29%
+Final Weekly Model,Random Forest (Weekly)
+Final Weekly Accuracy,59.98%
+Improvement over Daily,+9.98%
+Improvement over Baseline,+9.98%
+Features Used,"5 features (MA5, MA20, Lag1, Lag3, INR_Return)"
+Prediction Horizon,1 week (5 trading days)
