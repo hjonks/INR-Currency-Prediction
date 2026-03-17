@@ -1,0 +1,9 @@
+api_keys.txt
+data/raw/
+data/processed/
+venv/
+.venv/
+__pycache__/
+.Rhistory
+src/
+*.pyc
